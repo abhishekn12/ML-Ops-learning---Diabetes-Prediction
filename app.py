@@ -16,9 +16,9 @@ def get_ml_models():
     #amlws = Amlworspace()    
     return Amlworspace.get_ml_models();
 
-@app.route('/deploy')
+@app.route('/deploy',methods = ['GET','POST'])
 def deploy():
-    return render_template('deploy.html')
+    return render_template('deploy.py')
 
 def main():
     print("Starting app!!!")
